@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Nav with Pages</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="center-bottom-footer-top">
+
+    <nav id="nav">
+      <a onclick="showSection('activity', this)">Activity</a>
+      <a onclick="showSection('profile', this)">Profile</a>
+      <a onclick="showSection('settings', this)">Settings</a>
+      <div class="underline" id="underline"></div>
+    </nav>
+
+    <div id="activity" class="section active">
+      <div class="page">
+        <div class="img">
+          <img src="	https://themewagon.github.io/materialpro-nextjs-free/images/users/1.jpg" alt="">
+        </div>
+        <div class="line-john"></div>
+        <div class="img-right">
+          <h4>John Doe</h4>
+          <span class="span-minutes">
+            5 minutes ago
+          </span>
+          <span class="span-text">
+            assign a new task Design weblayout
+          </span>
+
+          <div class="bottom-page">
+            <div class="img-page">
+              <img src="https://themewagon.github.io/materialpro-nextjs-free/images/big/img1.jpg" alt=""
+                style="margin-left: 80px;">
+              <img src="https://themewagon.github.io/materialpro-nextjs-free/images/big/img2.jpg" alt="">
+              <img src="https://themewagon.github.io/materialpro-nextjs-free/images/big/img3.jpg" alt="">
+              <img src="https://themewagon.github.io/materialpro-nextjs-free/images/big/img4.jpg" alt="">
+            </div>
+            <div class="img-page-bottom">
+              <button
+                class="button-img-bottom1 MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1hnps5a"
+                tabindex="0" type="button">
+                <span class="MuiButton-startIcon MuiButton-iconSizeSmall css-16rzsu1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-message">
+                    <path d="M8 9h8"></path>
+                    <path d="M8 13h6"></path>
+                    <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z">
+                    </path>
+                  </svg>
+                </span>Comments<span class="MuiTouchRipple-root css-w0pj6f"></span>
+              </button>
+
+              <button
+                class="button-img-bottom2 MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textError MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textError MuiButton-sizeSmall MuiButton-textSizeSmall css-1xezv4m"
+                tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeSmall css-16rzsu1"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-heart-filled">
+                    <path
+                      d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                      fill="currentColor" stroke-width="0"></path>
+                  </svg></span>5 Likes<span class="MuiTouchRipple-root css-w0pj6f"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page2">
+        <div class="img">
+          <img src="	https://themewagon.github.io/materialpro-nextjs-free/images/users/2.jpg" alt="">
+        </div>
+        <div class="line-James"></div>
+        <div class="img-right">
+          <h4 style="margin-top: -235px;">James Smith</h4>
+          <span class="span-minutes" style="margin-left: 200px;">
+            5 minutes ago
+          </span>
+
+          <div class="bottom-page">
+            <div class="img-page">
+              <img src="	https://themewagon.github.io/materialpro-nextjs-free/images/big/img4.jpg" alt=""
+                style="margin-left: 80px; ">
+              <span style="font-size: 13px; margin-left: 20px; margin-top: 30px; position: absolute;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                <span style="margin-left: -360px; margin-top: 22px; position: absolute;">nec odio. Praesent libero. Sed cursus ante dapibus diam.</span>
+              </span>
+              <div class="img-page-bottom">
+                <button
+                  class="button-img-bottom1 MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1hnps5a"
+                  tabindex="0" type="button">
+                  <span class="MuiButton-startIcon MuiButton-iconSizeSmall css-16rzsu1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-message">
+                      <path d="M8 9h8"></path>
+                      <path d="M8 13h6"></path>
+                      <path
+                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z">
+                      </path>
+                    </svg>
+                  </span>Comments<span class="MuiTouchRipple-root css-w0pj6f"></span>
+                </button>
+
+                <button
+                  class="button-img-bottom2 MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textError MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textError MuiButton-sizeSmall MuiButton-textSizeSmall css-1xezv4m"
+                  tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeSmall css-16rzsu1"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-heart-filled">
+                      <path
+                        d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                        fill="currentColor" stroke-width="0"></path>
+                    </svg></span>5 Likes<span class="MuiTouchRipple-root css-w0pj6f"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile" class="section">
+        <h1>👤 Profile</h1>
+        <p>Name: John Doe</p>
+        <p>Email: john@example.com</p>
+      </div>
+
+      <div id="settings" class="section">
+        <h1>⚙️ Settings</h1>
+        <p>Change your account preferences.</p>
+      </div>
+  </section>
+
+  <script>
+    const underline = document.getElementById("underline");
+
+    function showSection(id, element) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      document.getElementById(id).classList.add('active');
+
+      // Animate underline
+      const nav = document.getElementById("nav");
+      const rect = element.getBoundingClientRect();
+      const navRect = nav.getBoundingClientRect();
+      underline.style.width = `${rect.width}px`;
+      underline.style.left = `${rect.left - navRect.left}px`;
+    }
+
+    // Default: Activity active
+    window.addEventListener("load", () => {
+      const defaultLink = document.querySelector("nav a");
+      showSection("activity", defaultLink);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
